@@ -41,6 +41,14 @@ minimum requirements:
 > [!WARNING]
 > Ubuntu 20.04 is not supported anymore. Please use Ubuntu 22.04 or newer.
 
+```console
+sudo apt update
+sudo apt install -y python3-pip python3-venv git rsync wget cmake doxygen \
+  graphviz build-essential clang-tidy cppcheck openjdk-17-jdk npm docker \
+  docker-compose libboost-all-dev nodejs libssl-dev libsqlite3-dev \
+  clang-format curl rfkill libpcap-dev libevent-dev pkg-config libcap-dev
+```
+
 ```bash
 sudo apt update
 sudo apt install -y python3-pip python3-venv git rsync wget cmake doxygen \
@@ -49,9 +57,17 @@ sudo apt install -y python3-pip python3-venv git rsync wget cmake doxygen \
   clang-format curl rfkill libpcap-dev libevent-dev pkg-config libcap-dev
 ```
 
+```console
+$ sudo apt update
+$ sudo apt install -y python3-pip python3-venv git rsync wget cmake doxygen \
+  graphviz build-essential clang-tidy cppcheck openjdk-17-jdk npm docker \
+  docker-compose libboost-all-dev nodejs libssl-dev libsqlite3-dev \
+  clang-format curl rfkill libpcap-dev libevent-dev pkg-config libcap-dev
+```
+
 ### OpenSuse
 
-```shell
+```console
 zypper update && zypper install -y sudo shadow
 zypper install -y --type pattern devel_basis
 zypper install -y git rsync wget cmake doxygen graphviz clang-tools cppcheck \
